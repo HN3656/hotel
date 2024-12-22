@@ -1,0 +1,300 @@
+/* General Reset and Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  h1, h2, h3 {
+    font-weight: bold;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  button {
+    padding: 12px 25px;
+    background-color: #008080; /* Teal */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #006666; /* Darker Teal */
+  }
+  
+  header {
+    background-color: #004d40; /* Dark Teal */
+    color: white;
+    padding: 20px 0;
+  }
+  
+  header h1 {
+    display: inline-block;
+    font-size: 40px; /* Changed to px */
+  }
+  
+  header nav {
+    float: right;
+  }
+  
+  header nav ul {
+    display: flex;
+    gap: 20px;
+  }
+  
+  header nav ul li {
+    display: inline;
+  }
+  
+  header nav ul li a {
+    color: white;
+    font-size: 18px; /* Changed to px */
+    text-transform: uppercase;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background-image: url('./img/hootel.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+    padding: 100px 20px;
+  }
+  
+  .hero h2 {
+    font-size: 56px; /* Changed to px */
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 20px; /* Changed to px */
+    margin-bottom: 30px;
+  }
+  
+  .hero .btn {
+    padding: 15px 30px;
+    background-color: #ffcc00; /* Gold */
+    color: #004d40; /* Dark Teal */
+    font-size: 20px; /* Changed to px */
+    border-radius: 5px;
+  }
+  
+  .hero .btn:hover {
+    background-color: #e6b800; /* Darker Gold */
+  }
+  
+  /* Rooms Section */
+  .rooms {
+    background-color: #fff;
+    padding: 80px 0;
+  }
+  
+  .rooms h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #004d40; /* Dark Teal */
+    font-size: 30px; /* Changed to px */
+  }
+  
+  .room-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+  }
+  
+  .room-card {
+    background-color: #f1f1f1;
+    padding: 20px;
+    width: 30%;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s;
+  }
+  
+  .room-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .room-card img {
+    max-width: 100%;
+    border-radius: 8px;
+  }
+  
+  .room-card h3 {
+    margin-top: 15px;
+    font-size: 24px; /* Changed to px */
+    color: #008080; /* Teal */
+  }
+  
+  .room-card p {
+    margin-top: 10px;
+    font-size: 18px; /* Changed to px */
+    color: #666;
+  }
+  
+  /* About Section */
+  .about {
+    background-color: #f0f0f0;
+    padding: 80px 0;
+  }
+  
+  .about p {
+    text-align: center;
+    font-size: 18px; /* Changed to px */
+    line-height: 1.8;
+    color: #666;
+  }
+  
+  /* Booking Section */
+  .booking {
+    padding: 80px 0;
+    background-color: #fff;
+  }
+  
+  .booking h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #004d40; /* Dark Teal */
+    font-size: 30px; /* Changed to px */
+  }
+  
+  form {
+    display: grid;
+    gap: 25px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group label {
+    font-size: 18px; /* Changed to px */
+    margin-bottom: 8px;
+    color: #333;
+  }
+  
+  .form-group input, .form-group select {
+    padding: 12px;
+    font-size: 18px; /* Changed to px */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    color: #333;
+  }
+  
+  form button {
+    background-color: #008080; /* Teal */
+    color: white;
+    font-size: 18px; /* Changed to px */
+  }
+  
+  form button:hover {
+    background-color: #006666; /* Darker Teal */
+  }
+  
+  /* Contact Section */
+  .contact {
+    padding: 80px 0;
+    background-color: #f0f0f0;
+  }
+  
+  .contact p {
+    text-align: center;
+    font-size: 18px; /* Changed to px */
+    color: #333;
+  }
+  
+  footer {
+    background-color: #004d40; /* Dark Teal */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 16px; 
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .room-cards {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    header nav {
+      float: none;
+      text-align: center;
+    }
+  
+    header nav ul {
+      flex-direction: column;
+      margin-top: 10px;
+    }
+  
+    .hero h2 {
+      font-size: 36px;
+    }
+  
+    .hero p {
+      font-size: 18px; 
+    }
+  
+    .hero .btn {
+      font-size: 18px; 
+    }
+  
+    .rooms h2 {
+      font-size: 26px;
+    }
+  
+    .room-card h3 {
+      font-size: 22px;
+    }
+  
+    .room-card p {
+      font-size: 16px;
+    }
+  
+    .about p {
+      font-size: 16px;
+    }
+  
+    .booking h2 {
+      font-size: 26px; 
+    }
+  
+    .form-group label {
+      font-size: 16px;
+    }
+  
+    .form-group input, .form-group select {
+      font-size: 16px;
+    }
+  
+    footer {
+      font-size: 14px;
+    }
+  }
+  
